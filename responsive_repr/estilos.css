@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+@media screen and (max-width:360px){
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+    .cont{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .cont h2{
+        font-size: 2.2em;
+    }
+    .image{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+    }
+    .options{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .options button{
+        border: none;
+        outline: none;
+        background: #3567d3;
+        padding: 10px;
+        width: 200px;
+        border-radius: 30px;
+    }
+    .options button a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+    }
+    .options .skip{
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 5px;
+        color: #808080;
+    }
+    .cont span a{
+        text-decoration: none;
+        margin-left: 4px;
+        color: #3567d3;
+    }
+
+    /*------principal part-------*/
+
+
+
+    .container2{
+        width: 100%;
+        height: 100vh;
+        padding: 20px 20px 930px 20px;
+        position: relative;
+    }
+    .header_top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header_top button{
+        font-size: 25px;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    .image2{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .info span{
+        font-size: 14px;
+        color: #808080;
+    }
+    .info h2{
+        font-size: 30px
+    }
+    .search{
+        width: 100%;
+        position: relative;
+        margin-top: 20px;
+    }
+    .search input{
+        border: none;
+        outline: none;
+        background: #dedede;
+        width: 100%;
+        padding: 15px 55px;
+        border-radius: 30px;
+    }
+    .search input::placeholder{
+        color: #808080;
+    }
+    .search i{
+        position: absolute;
+        left: 20px;
+        top: 35%;
+    }
+    .banner{
+        margin-top: 20px;
+    }
+    .banner .card{
+        width: 400px;
+        height: 150px;
+        margin-left: 4px;
+        background: url(images/bg.jpg);
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        color: #fff;
+        position: relative;
+    }
+    .banner .card p{
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        width: 100px;
+        
+    }
+    .banner .card1{
+        width: 100%;
+    }
+
+
+
+
+
+    /*------------bottom menu---------------*/
+    .header2{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+        border-top: 1px solid #adadad;
+        background: #fff;
+    }
+    .song-details{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        padding: 0 5px;
+    }
+    .song-details span:nth-child(1){
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .song-details a{
+        text-decoration: none;
+        color: #3567d3;
+    }
+    .listas{
+        background: #e0e0e0;
+        display: flex;
+        border-radius: 10px;
+        padding: 5px 20px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .descriptions-list{
+        display: flex;
+        justify-content: center;
+    }
+    .artist{
+        display: flex;
+        flex-direction: column;
+    }
+    .artist span:nth-child(1){
+        width: 100px;
+        margin-left: 10px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+    .artist span:nth-child(2){
+        font-size: 13px;
+        color: #808080;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .descriptions-list img{
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        background-position: center;
+        border-radius: 15px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button button{
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        font-size: 15px;
+        padding: 10px 15px;
+        color: #3567d3;
+    }
+
+
+
+    /*-----------login styles------------*/
+    .container3{
+        width: 100%;
+        height: 100vh;
+    }
+    .form{
+        width: 100%;
+        height: 100%;
+        padding: 20px 40px;
+        position: relative;
+    }
+    .form h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    .login_image{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-left: 20%;
+    }
+    .name, .email, .password{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .form input{
+        border: 1px solid #dedede;
+        outline: none;
+        padding: 10px 20px;
+    }
+    .form input:focus{
+        border: 1px solid #3567d3;
+    }
+    .form button{
+        border: none;
+        outline: none;
+        display: flex;
+        margin: 20px auto;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+        background: #3567d3;
+        color: #fff;
+        border-radius: 30px;
+    }
+    .form .arrow{
+        position: absolute;
+        top: 40px;
+    }
+
+
+    /*----------reproductor-----------*/
+    .reproductor{
+        width: 90%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        background: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .reproductor.mini{
+        width: 90%;
+        height: 70px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: fixed;
+        top: calc(80% + 12px);
+        padding: 0 10px;
+    }
+    .reproductor.mini .details h2{
+        font-size: 20px;
+    }
+    .reproductor.mini .details span{
+        font-size: 13px;
+    }
+    .reproductor.mini .current, .reproductor.mini header{
+        display: none;
+    }
+    .reproductor.mini i:nth-child(1), .reproductor.mini i:nth-child(2), .reproductor.mini i:nth-child(4), .reproductor.mini i:nth-child(5){
+        display: none;
+    }
+    .reproductor.mini .controls .play{
+        background: transparent;
+        position: absolute;
+        color: #000;
+        right: 0;
+        top: 10%;
+    }
+    .reproductor.mini .details{
+        margin-left: 20px;
+    }
+    .reproductor.mini img{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        position: relative;
+        bottom: 10px;
+    }
+    .reproductor header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+    }
+    .container-image-music img{
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+    .reproductor .details h2{
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .reproductor .current{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .controls{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    .controls i:nth-child(3){
+        background: #3567d3;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 20px;
+    }
+}
